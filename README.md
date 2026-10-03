@@ -1,16 +1,101 @@
-# React + Vite
+# 💎 Lumora Jewels
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive jewelry e-commerce web application built with **React.js, JavaScript, and Firebase**.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- User registration and login
+- Firebase Authentication
+- Product browsing
+- Product search and filtering
+- Category and price filtering
+- Product details
+- Shopping cart
+- Wishlist
+- Checkout
+- Order history
+- Order status tracking
+- Admin dashboard
+- Product CRUD operations
+- Order management
+- Role-based access control
+- Firestore security rules
+- Responsive design
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- JavaScript
+- Vite
+- Firebase Authentication
+- Cloud Firestore
+- React Router
+- Context API
+- HTML5
+- CSS3
+- Git & GitHub
 
-## Expanding the Oxlint configuration
+## 🏗️ Application Flow
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Customer
+
+```text
+Register / Login
+       ↓
+Browse Products
+       ↓
+Search / Filter
+       ↓
+Product Details
+       ↓
+Shopping Cart
+       ↓
+Wishlist
+       ↓
+Checkout
+       ↓
+Place Order
+       ↓
+Order History
+Admin
+Admin Login
+     ↓
+Admin Dashboard
+     ↓
+Manage Products
+     ↓
+Add / Edit / Delete Products
+     ↓
+Manage Orders
+     ↓
+Update Order Status
+🔐 Firebase
+
+Firebase is used for:
+
+Authentication
+Cloud Firestore
+User profiles
+Product data
+Order data
+Role-based access control
+Firestore security rules
+💻 Run Locally
+git clone https://github.com/Atharv455/lumora-jewels.git
+cd lumora-jewels
+npm install
+npm run dev
+
+Create a .env file and add your Firebase configuration.
+
+📦 Production Build
+npm run build
+📊 Project Status
+
+MVP completed and functionally tested.
+
+👨‍💻 Developer
+
+Atharv Kolapkar
+
+GitHub: https://github.com/Atharv455
