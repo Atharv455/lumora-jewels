@@ -1,0 +1,135 @@
+.cart-page {
+  min-height: 60vh;
+}
+
+.cart-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 80px 1fr auto auto auto;
+  align-items: center;
+  gap: 16px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.cart-item__image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.cart-item__category {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-gold-dark);
+  font-weight: 600;
+}
+
+.cart-item__info h3 {
+  font-size: 0.98rem;
+  margin: 4px 0;
+}
+
+.cart-item__price {
+  color: var(--color-dark-soft);
+  font-size: 0.88rem;
+}
+
+.cart-item__qty {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.cart-item__qty button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: var(--color-cream-dark);
+}
+
+.cart-item__qty span {
+  width: 32px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.cart-item__subtotal {
+  font-weight: 600;
+  min-width: 90px;
+  text-align: right;
+}
+
+.cart-item__remove {
+  border: none;
+  background: transparent;
+  color: var(--color-error);
+}
+
+.cart-layout__continue {
+  display: block;
+  text-align: center;
+  margin-top: 14px;
+  font-size: 0.88rem;
+  color: var(--color-gold-dark);
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .cart-item {
+    grid-template-columns: 60px 1fr;
+    grid-template-areas:
+      "image info"
+      "image qty"
+      "subtotal subtotal"
+      "remove remove";
+  }
+
+  .cart-item__image {
+    grid-area: image;
+    width: 60px;
+    height: 60px;
+  }
+
+  .cart-item__info {
+    grid-area: info;
+  }
+
+  .cart-item__qty {
+    grid-area: qty;
+  }
+
+  .cart-item__subtotal {
+    grid-area: subtotal;
+    text-align: left;
+  }
+
+  .cart-item__remove {
+    grid-area: remove;
+    justify-self: start;
+  }
+}
