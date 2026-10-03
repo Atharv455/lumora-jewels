@@ -1,5 +1,6 @@
 # 💎 Lumora Jewels
-
+🌐 Live Demo: https://lumora-jewels.vercel.app/
+💻 GitHub: https://github.com/Atharv455/lumora-jewels
 A responsive jewelry e-commerce web application built with **React.js, JavaScript, and Firebase**.
 
 ## 🚀 Features
